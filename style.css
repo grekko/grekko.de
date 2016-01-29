@@ -3,10 +3,6 @@ html, body {
 }
 
 body {
-	/* background: #0a2531; */
-	/* background: linear-gradient(135deg, #0a2531 0%, #191919 100%); */
-	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2531', endColorstr='#191919', GradientType=0 ); */
-  /* color: white; */
   display: flex;
   align-items: center;
   justify-content: center;
