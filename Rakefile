@@ -1,4 +1,4 @@
-desc 'Push updates to grekko.de github repository'
+desc 'Push updates to github pages: grekko.de'
 task :push do
   sh 'git checkout gh-pages'
   sh 'git rebase master'
