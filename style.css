@@ -43,3 +43,7 @@ a:link {
 a:hover {
   border-bottom: 1px solid currentcolor;
 }
+
+.p-l {
+  padding-left: 0.2em;
+}
