@@ -1,13 +1,14 @@
 {
-  "source": "src",
+  "source": "src/content",
   "destination": "docs",
   "plugins": {
     "metalsmith-layouts": {
       "engine": "handlebars",
+      "directory": "src/layouts",
       "default": "index.html"
     },
 		"metalsmith-assets": {
-      "source": "./public",
+      "source": "src/public",
       "destination": "."
     }
   }
