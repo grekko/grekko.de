@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/grekko
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.grekko.de
+  * I am grekko (https://keybase.io/grekko) on keybase.
+  * I have a public key with fingerprint A59B 1425 4ABD 4F76 5E04  6628 C3D3 3C4F 82DA 3960
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017996c145a9935f3dc2a8c762c42c3187d914b0a2903aabce4fddb2441941a50f0a",
+            "fingerprint": "a59b14254abd4f765e046628c3d33c4f82da3960",
+            "host": "keybase.io",
+            "key_id": "c3d33c4f82da3960",
+            "kid": "01017996c145a9935f3dc2a8c762c42c3187d914b0a2903aabce4fddb2441941a50f0a",
+            "uid": "2cb5033d7b53158278adc1fa4d093300",
+            "username": "grekko"
+        },
+        "service": {
+            "hostname": "www.grekko.de",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1460141538,
+    "expire_in": 157680000,
+    "prev": "cde3ec67f3dfc9c2b593bb5f853888d1b5ad5f7da0b558afea93c77cf4825c14",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMM+AnicrVJtUFRVGF4ksFAQAYcRJxtvKZaI9/tjIT6S1WGMGBdBR4n13HPPhcvi
+7nZ3l88oMYZJB2dgmDCSZqAvMiSwGVIQDQQtUoNAU5j4gUGuq1lNNbPDukz3kv3r
+Z+fPmfO+z/O8z/vMGQkPNoQFDU8mZx+ZFg4GXR1qdhv2Lg/cqcJEu1SBGaswK1q6
+UImEnC6LVZEwI4YTOMEJAgsJmgGCQDEyJUES8JBjSUiTkCJ4ThIIWsQBKeAUACJE
+tCxJIknThEATgMFlHGAJmKzYCpHqUBWbS5MFjCASNMnQQJRomWMZhNMsS/KQkigK
+0jJPSoASWFwjFtmdOkMzJwInSlTsWk17WJbs/Qf+f/btXpIjocjgFCVxIkMRDE9y
+PJAgIQNawgWKwvW5bidSbeAQ0tCFKrJa7Vh1AqbVShWI9Fj1PR73y8rKEv/BJEpI
+ozpUu8sO7SVaq8jlchh1pqvCsQRFouWxiEVUbJKWokYoRapTsdswI6EhoUvRVQma
+xQmaYCg+AUPlDkVFFkVHMBzL49rRx6BSPTMJUQiynJaIDAVIioxAiSIj8xqV5yVC
+ZIDEyJwEcJFheCAjIFCQ46BM8ySj5Ynpa71ms2valOYTFGqaTqXQBlxuFWHVl4by
+nzAEhRlCQ5bp38sQ9lTkv58utHzVo4gQ/5mUyRd/CWQOBip3VW5MdTfdOHfcGVWV
+Nesc/GnnAv/In/vCw9rRxc0OvNo3aJYebvwmYFnZ25zgeCvrqO1K3xf+tucTP87B
+vmV3vPlnzkDScHhxXGhf9K2pmbyDxaaa2E1GNH2PjPB0t3aM9irbxgKR3x2wHJ+a
+m1rRefRa0wlf5S7He+tvX37/d2vySM2DfvZCT+fCu/vnK3Ib5vNNl0cHgoWYjARV
+vWWaXRSbG2LiX57wt2z4eiwrrqe3avzm6QxvrHU5Ox/4rDHr5Jqy8dyIoH1h9eYv
+o08EktKP5J3vvilOjXVkLt45U5D9R83KNfWvtqR/aLqQepobCXvp8wrL5NtbwYYP
+uK52h/nu2Xeoe8+Qr0/WHW495qvbs9V5f+hYc5/3elJb+9wbs8kDLYcdzrXxO9Yy
+7Vd3z9SubjiU7h+oGUo27Vuo98TPRHtLU3dv8nwUXrmuPFNFWzJiU6yb07r6fcE/
+5qT8bGyzTUSOe8SRSaCc+pQWnxR5rvFUj5dovR5l3jMdeSnS3zl7ILPRenFd92Jj
+1Pbcyqj82yVx0/a8bTs/8e6/+HTtNa+7YCLtr986rmR3noyK8dU+N4d9lfZDU383
+HOZ951ewZ7vyp2fvPrt3ot5coKwKKOOd/VmwbstQ8WoPMww97mW/fm8+Z2h/xYXu
+x9cWpdyIDVmPJh78DabQx7s=
+=fR+Z
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/grekko
+
+==================================================================
+

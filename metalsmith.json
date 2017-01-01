@@ -1,0 +1,14 @@
+{
+  "source": "src",
+  "destination": "docs",
+  "plugins": {
+    "metalsmith-layouts": {
+      "engine": "handlebars",
+      "default": "index.html"
+    },
+		"metalsmith-assets": {
+      "source": "./public",
+      "destination": "."
+    }
+  }
+}

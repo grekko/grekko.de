@@ -1,0 +1,91 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+/* Structure */
+
+.container {
+  max-width: 500px;
+  margin: 25px;
+}
+
+/* Typo */
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1, h3 {
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  margin-bottom: 1.2em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid currentcolor;
+}
+
+.p-l {
+  padding-left: 0.2em;
+}
+
+/* Testimonials */
+.testimonials .testimonial {
+  margin-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 5px #EEE solid;
+}
+
+.testimonials .testimonial .testimonial--author {
+  display: flex;
+}
+.testimonials .testimonal:nth-child(odd) .testimonial--author {
+  flex-direction: row;
+}
+.testimonials .testimonial:nth-child(even) .testimonial--author {
+  flex-direction: row-reverse;
+}
+
+.testimonial--author > * + * {
+  margin: 0 1em;
+}
+
+/* Author details  */
+
+.testimonial--author dl {
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial--author dl dt {
+  margin-left: 1em;
+  font-weight: 700;
+}
+
+/* Custom elements */
+
+.avatar {
+  padding: 1px;
+  border: 1px #eee solid;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
