@@ -12,6 +12,9 @@ var Metalsmith = require('metalsmith'),
 
 Metalsmith(__dirname)
   .use(serve())
+  .metadata({
+    title: "Gregory Igelmund"
+  })
   .source('./src/content')
   .destination('./docs')
   .clean(true)

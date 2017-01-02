@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Gregory Igelmund">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gregory Igelmund</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="/styles/normalize-3.0.2.css">
     <link rel="stylesheet" href="/styles/style.css">
     <!--// TODO: Use SVGs instead of icont font :) //-->
@@ -14,7 +14,13 @@
   </head>
   <body>
     <div class="container">
-      {{{ contents }}}
+      <nav class="m-b">
+        <a href="/index.html"><abbr title="Today I learned">TIL</abbr></a>
+        <a href="/about.html">Gregory Igelmund</a>
+      </nav>
+      <main>
+        {{{ contents }}}
+      </main>
     </div>
   </body>
 </html>
