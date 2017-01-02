@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Gregory Igelmund">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gregory Igelmund</title>
+    <title>HTML Escaping in Handlebars</title>
     <link rel="stylesheet" href="/styles/normalize-3.0.2.css">
     <link rel="stylesheet" href="/styles/style.css">
     <!--// TODO: Use SVGs instead of icont font :) //-->
@@ -14,7 +14,12 @@
   </head>
   <body>
     <div class="container">
-      <p>When setting up this microblog I observed <a href="http://handlebarsjs.com/">handlebars</a> offers a neat
+      <nav class="m-b">
+        <a href="/index.html"><abbr title="Today I learned">TIL</abbr></a>
+        <a href="/about.html">Gregory Igelmund</a>
+      </nav>
+      <main>
+        <p>When setting up this microblog I observed <a href="http://handlebarsjs.com/">handlebars</a> offers a neat
 built-in security feature: Automatic HTML Escaping for interpolated strings.</p>
 <p>Meaning the following string being stored as <code>html_fragment</code>:</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is some html-fragment I'd like to place into a html-layout-file<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
@@ -43,6 +48,7 @@ Achieving this is quite easy, with the <code>triple-stash</code>:</p>
 …
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is some html-fragment I'd like to place into a html-layout-file<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 …</code></pre>
+      </main>
     </div>
   </body>
 </html>
