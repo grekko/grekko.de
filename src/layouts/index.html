@@ -13,14 +13,18 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
   </head>
   <body>
-    <div class="container">
-      <nav class="m-b">
-        <a href="/index.html"><abbr title="Today I learned">TIL</abbr></a>
-        <a href="/about.html">Gregory Igelmund</a>
-      </nav>
-      <main>
+    <nav class="navigation m-b">
+      <div class="container">
+        <ul class="reset-list">
+          <li><a href="/index.html"><abbr title="Today I learned">TIL</abbr></a></li>
+          <li class="p-l"><a href="/about.html">Gregory Igelmund</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <article class="container">
         {{{ contents }}}
-      </main>
-    </div>
+      </article>
+    </main>
   </body>
 </html>
