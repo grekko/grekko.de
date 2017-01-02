@@ -5,15 +5,25 @@
   "main": "index.js",
   "dependencies": {
     "handlebars": "^4.0.6",
+    "jstransformer-handlebars": "^1.0.0",
     "metalsmith": "^2.3.0",
     "metalsmith-assets": "^0.1.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-date-in-filename": "^0.0.14",
+    "metalsmith-debug": "^1.1.0",
+    "metalsmith-in-place": "^2.0.1",
     "metalsmith-layouts": "^1.7.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-metallic": "^2.0.1",
+    "metalsmith-move-up": "^1.0.0",
+    "metalsmith-serve": "^0.0.7",
     "nodemon": "^1.11.0"
   },
   "devDependencies": {},
   "scripts": {
-    "build": "metalsmith .",
-    "watch": "nodemon --watch src/ --watch public/ --ext html,png,css,txt --exec npm run build",
+    "build": "node metalsmith-build.js",
+    "debug": "DEBUG=metalsmith:* npm run build",
+    "watch": "nodemon --watch metalsmith-build.js --watch src/ --watch public/ --ext hbs,md,html,png,css,txt --exec npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Gregory Igelmund">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gregory Igelmund</title>
+    <link rel="stylesheet" href="/styles/normalize-3.0.2.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <!--// TODO: Use SVGs instead of icont font :) //-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <p>When setting up this microblog I observed <a href="http://handlebarsjs.com/">handlebars</a> offers a neat
+built-in security feature: Automatic HTML Escaping for interpolated strings.</p>
+<p>Meaning the following string being stored as <code>html_fragment</code>:</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is some html-fragment I'd like to place into a html-layout-file<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+
+<p>being interpolated in:</p>
+<pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+…
+{{ html_fragment }}
+…</code></pre>
+
+<p>would result in:</p>
+<pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+…
+&amp;lt;&amp;gt;This is some html-fragment I'd like to place into a html-layout-file&amp;lt;&amp;gt;
+…</code></pre>
+
+<p>While I love the built-in default security behavior you sometimes want to disable it.
+Achieving this is quite easy, with the <code>triple-stash</code>:</p>
+<pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+…
+{{{ html_fragment }}}
+…</code></pre>
+
+<p>results in:</p>
+<pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+…
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is some html-fragment I'd like to place into a html-layout-file<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+…</code></pre>
+    </div>
+  </body>
+</html>
