@@ -2,6 +2,8 @@
 title: HTML Escaping in Handlebars
 ---
 
+# HTML Escpaing in Handlebars
+
 When setting up this microblog I observed [handlebars](http://handlebarsjs.com/) offers a neat
 built-in security feature: Automatic HTML Escaping for interpolated strings.
 
