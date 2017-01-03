@@ -6,8 +6,7 @@ title: Today I learned
 <ul>
 {{#each posts}}
   <li>
-  {{log this}}
-  <a href="{{ this.path }}">{{ this.title }}</a> ( {{ this.date }} )
+    <a href="{{ this.path }}">{{ this.title }}</a> ( {{ formattedDate this.date }} )
   </li>
 {{/each}}
 </ul>

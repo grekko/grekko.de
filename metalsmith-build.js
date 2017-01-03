@@ -6,6 +6,7 @@ var Metalsmith = require('metalsmith'),
   assets = require('metalsmith-assets'),
   moveUp = require('metalsmith-move-up'),
   dateInFilename = require('metalsmith-date-in-filename'),
+  discoverHelpers = require('metalsmith-discover-helpers'),
   collections = require('metalsmith-collections'),
   serve = require('metalsmith-serve'),
   debug = require('metalsmith-debug');
@@ -18,6 +19,7 @@ Metalsmith(__dirname)
   .source('./src/content')
   .destination('./docs')
   .clean(true)
+  .use(discoverHelpers())
   .use(metallic())
   .use(markdown())
   .use(dateInFilename(true))
