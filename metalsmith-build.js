@@ -20,7 +20,7 @@ Metalsmith(__dirname)
     title: "Gregory Igelmund"
   })
   .source('./src/content')
-  .destination('./build')
+  .destination('./docs')
   .clean(true)
   .use(discoverHelpers())
   .use(metallic())
