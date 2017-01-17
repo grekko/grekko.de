@@ -3,7 +3,7 @@ var Metalsmith = require('metalsmith'),
   layouts = require('metalsmith-layouts'),
   inPlace = require('metalsmith-in-place'),
   metallic = require('metalsmith-metallic'),
-  assets = require('metalsmith-assets'),
+  static = require('metalsmith-static'),
   moveUp = require('metalsmith-move-up'),
   dateInFilename = require('metalsmith-date-in-filename'),
   discoverHelpers = require('metalsmith-discover-helpers'),
@@ -12,6 +12,7 @@ var Metalsmith = require('metalsmith'),
   debug = require('metalsmith-debug');
 
 Metalsmith(__dirname)
+  .use(debug())
   .use(serve({
     port: 8080,
     verbose: true
@@ -22,6 +23,10 @@ Metalsmith(__dirname)
   .source('./src/content')
   .destination('./docs')
   .clean(true)
+  .use(static({
+    src: "src/public",
+    dest: "."
+  }))
   .use(discoverHelpers())
   .use(metallic())
   .use(markdown())
@@ -41,13 +46,8 @@ Metalsmith(__dirname)
     directory: "src/layouts",
     default: "index.html"
   }))
-  .use(assets({
-    source: "src/public",
-    destination: "."
-  }))
 	.use(inPlace())
   .use(moveUp("pages/*"))
-  .use(debug())
   .build(function (err) {
     if (err) {
       console.log(err);
