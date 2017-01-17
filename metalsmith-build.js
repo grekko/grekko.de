@@ -12,12 +12,15 @@ var Metalsmith = require('metalsmith'),
   debug = require('metalsmith-debug');
 
 Metalsmith(__dirname)
-  .use(serve())
+  .use(serve({
+    port: 8080,
+    verbose: true
+  }))
   .metadata({
     title: "Gregory Igelmund"
   })
   .source('./src/content')
-  .destination('./docs')
+  .destination('./build')
   .clean(true)
   .use(discoverHelpers())
   .use(metallic())

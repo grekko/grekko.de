@@ -1,0 +1,13 @@
+---
+title: Today I learned
+---
+
+<h1>Today I learned</h1>
+<ul>
+{{#each posts}}
+  <li>
+    <a href="{{ this.path }}">{{ this.title }}</a> ( {{ formattedDate this.date }} )
+  </li>
+{{/each}}
+</ul>
+
