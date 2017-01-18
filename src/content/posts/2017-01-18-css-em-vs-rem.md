@@ -1,8 +1,6 @@
 ---
-title: "CSS: REM vs EM"
+title: "REM vs. EM"
 ---
-
-# REM vs. EM
 
 I recently read CSS-Code containing three different types of relative units:
 [%](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage),

@@ -8,6 +8,7 @@ var Metalsmith = require('metalsmith'),
   dateInFilename = require('metalsmith-date-in-filename'),
   discoverHelpers = require('metalsmith-discover-helpers'),
   collections = require('metalsmith-collections'),
+  layoutByPath = require(__dirname + '/lib/layout-by-path'),
   serve = require('metalsmith-serve'),
   debug = require('metalsmith-debug');
 
@@ -18,7 +19,8 @@ Metalsmith(__dirname)
     verbose: true
   }))
   .metadata({
-    title: "Gregory Igelmund"
+    title: "Gregory Igelmund",
+    layout: "page.html"
   })
   .source('./src/content')
   .destination('./docs')
@@ -34,17 +36,19 @@ Metalsmith(__dirname)
   .use(collections({
     posts: {
       pattern: "posts/*.html",
-      sortBy: 'date',
-      reverse: true,
+      sortBy: "date",
+      reverse: true
     },
     pages: {
       pattern: "pages/*.html"
     }
   }))
+  .use(layoutByPath())
   .use(layouts({
     engine: "handlebars",
     directory: "src/layouts",
-    default: "index.html"
+    default: "page.html",
+    partials: "src/layouts/partials"
   }))
 	.use(inPlace())
   .use(moveUp("pages/*"))
