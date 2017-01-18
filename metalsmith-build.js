@@ -2,7 +2,7 @@ var Metalsmith = require('metalsmith'),
   markdown = require('metalsmith-markdown'),
   layouts = require('metalsmith-layouts'),
   inPlace = require('metalsmith-in-place'),
-  metallic = require('metalsmith-metallic'),
+  prism = require('metalsmith-prism'),
   static = require('metalsmith-static'),
   moveUp = require('metalsmith-move-up'),
   dateInFilename = require('metalsmith-date-in-filename'),
@@ -28,8 +28,8 @@ Metalsmith(__dirname)
     dest: "."
   }))
   .use(discoverHelpers())
-  .use(metallic())
-  .use(markdown())
+  .use(markdown({ langPrefix: 'language-' }))
+  .use(prism())
   .use(dateInFilename(true))
   .use(collections({
     posts: {
