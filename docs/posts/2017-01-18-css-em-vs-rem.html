@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Gregory Igelmund">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS: REM vs EM</title>
+    <link rel="stylesheet" href="/styles/normalize-3.0.2.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/prism.css">
+    <!--// TODO: Use SVGs instead of icont font :) //-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet">
+
+    <!--// Favicon created w/ http://www.favicomatic.com //-->
+    <!--// The suffix 'vN' is used for cache busting the favicons //-->
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-196x196.png?v2" sizes="196x196" />
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png?v2" sizes="96x96" />
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png?v2" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png?v2" sizes="16x16" />
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-128.png?v2" sizes="128x128" />
+
+  </head>
+  <body>
+    <nav class="main-navigation">
+      <div class="container">
+        <ul class="reset-list navigation--list">
+          <li class="navigation--list-item"><a href="/index.html">About</a></li>
+          <li class="navigation--list-item"><a href="/today-i-learned.html"><abbr title="Today I learned">TIL</abbr></a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <article class="container">
+        <h1 id="rem-vs-em">REM vs. EM</h1>
+<p>I recently read CSS-Code containing three different types of relative units:
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage">%</a>,
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#em">em</a> and
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length#rem">rem</a>.</p>
+<p>Consider the following HTML snippet:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Hello World<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x2026;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>With the following CSS:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">html</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">/* assuming 100% == 16px */</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">/* 1rem == 16px =&gt; 32px */</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">/* 1em refers to current font-size (32px) =&gt; 32px */</span>
+  <span class="token property">padding-bottom</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* 1rem == 16px =&gt; 16px */</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Understanding the impact took me some time and I just finally <code>got it</code> when
+I read the great write-up of Zell: <a href="https://zellwk.com/blog/rem-vs-em/">REM vs EM &#x2013; The Great Debate</a>.</p>
+<p>Please go to Zells post for a full explanation. The TL;DR version is this:</p>
+<blockquote>
+<p>Use <code>em</code> for properties relative to the current elements font-size. Use <code>rem</code> for everything else.</p>
+</blockquote>
+<p>Following that rule you&apos;d understand why the <code>line-height</code> property uses <code>em</code>
+while <code>padding-bottom</code> would use <code>rem</code>.</p>
+
+      </article>
+    </main>
+  </body>
+</html>
