@@ -32,8 +32,8 @@ body {
 
 .main-navigation {
   width: 100%;
-  /* background: #00A1CB; */
   background: black;
+  box-shadow: 0 0 1em #757575;
   padding: 1em 0;
   font-size: 1.2rem;
 }
@@ -48,10 +48,6 @@ body {
   list-style-type: none;
 }
 
-.reset-list > * {
-  display: inline-block;
-}
-
 
 /* Typo */
 
@@ -61,7 +57,7 @@ html {
 }
 
 h1, h2, h3 {
-  border-bottom: 0.1em dashed rgba(0, 0, 0, 0.4);
+  /* border-bottom: 0.1em dashed rgba(0, 0, 0, 0.4); */
   padding-bottom: 0.1em;
   line-height: 1.4em;
   margin: 0;
