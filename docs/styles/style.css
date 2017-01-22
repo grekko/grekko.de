@@ -48,6 +48,15 @@ body {
   list-style-type: none;
 }
 
+/* SVG Icons */
+/* Icons taken from: https://www.iconfinder.com/search/?q=query */
+.icon {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  vertical-align: middle;
+}
+
 
 /* Typo */
 
