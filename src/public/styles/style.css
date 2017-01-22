@@ -191,6 +191,10 @@ main abbr[title]::after {
   .container {
     width: auto;
   }
+
+  .profile-image {
+    width: 30vw;
+  }
 }
 
 /** PRINT */
