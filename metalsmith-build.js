@@ -9,6 +9,7 @@ var Metalsmith = require('metalsmith'),
   discoverHelpers = require('metalsmith-discover-helpers'),
   collections = require('metalsmith-collections'),
   layoutByPath = require(__dirname + '/lib/layout-by-path'),
+  inlineSource = require(__dirname + '/lib/inline-source'),
   serve = require('metalsmith-serve'),
   debug = require('metalsmith-debug');
 
@@ -51,6 +52,7 @@ Metalsmith(__dirname)
     partials: "src/layouts/partials"
   }))
 	.use(inPlace())
+	.use(inlineSource())
   .use(moveUp("pages/*"))
   .build(function (err) {
     if (err) {
