@@ -82,11 +82,12 @@ a {
 .main-navigation a:link,
 main a:link {
   text-decoration: none;
+  color: green;
   /* FIXME: RGBA safe? */
   padding-bottom: 0.2em;
   border-bottom-width: 0.1em;
   border-bottom-style: solid;
-  border-bottom-color: rgba(50, 50, 255, 0.6);
+  border-bottom-color: currentColor;
 }
 
 .main-navigation a {
@@ -101,7 +102,7 @@ main a:hover {
 }
 
 main a:visited {
-  color: green;
+  color: darkgrey;
 }
 
 /* Layout */
