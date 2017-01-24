@@ -39,3 +39,19 @@ The first day was pretty brutal and displayed shortcomings regarding my current 
 technique.
 
 ![Words per Minute on day 1](/images/posts/kap-day1.png)
+
+### Day 2
+
+Day 2 I introduced the pedal. More on that later. I mapped it to `shift` but after
+using it for 3-4 hours my leg started aching. The progress in terms of WPM was not
+huge.
+
+Three reasons. First: I did not train a lot, just 3-4 hours overall. Second: I started
+properly coding, resulting in slowly re-learning all those precious muscle-memory
+dependant shortcuts and commands. Third: I realized that a lot of my typing is not
+`writing words` but commanding the computer to switch contexts, navigate the filesystem,
+search for text in files or eventually on the screen.
+
+I excited to see whats happening in the next 5-10 days.
+
+![Words per Minute on day 2](/images/posts/kap-day2.png)
