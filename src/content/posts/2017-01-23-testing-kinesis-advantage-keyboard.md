@@ -42,7 +42,7 @@ technique.
 
 ### Day 2
 
-Day 2 I introduced the pedal. More on that later. I mapped it to `shift` but after
+Day 2 I introduced the foot pedal. More on that later. I mapped it to `shift` but after
 using it for 3-4 hours my leg started aching. The progress in terms of WPM was not
 huge.
 
@@ -55,3 +55,21 @@ search for text in files or eventually on the screen.
 I excited to see whats happening in the next 5-10 days.
 
 ![Words per Minute on day 2](/images/posts/kap-day2.png)
+
+### Day 3
+
+I ditched the foot pedal. Also I started to invest some time to think about
+different ways of key-remapping.
+
+Over the day I spent about 3-4 hours typing, partially coding, partially
+writing text. Overall I mildly improved my WPM from 14 to 22.
+
+![Words per Minute on day 3](/images/posts/kap-day3.png)
+
+I definately dont want to change existing key-mappings since I will keep on
+using the not-ergonomic Microsoft keyboard and dont want to relearn two things
+at once.
+
+Therefore will investigate a software-solution to keep the same key-mappings
+but having an additional layer of `meta-mapping` when working with the kinesis.
+
