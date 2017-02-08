@@ -73,3 +73,20 @@ at once.
 Therefore will investigate a software-solution to keep the same key-mappings
 but having an additional layer of `meta-mapping` when working with the kinesis.
 
+
+### Day 4 & 5
+
+I am starting to gain some typing speed back (current WPM ~ 37) and I observed
+several problematic keys and key-combinations which I am still struggling with a lot.
+
+![Words per Minute on day 4 & 5](/images/posts/kap-day4-5.png)
+
+The most problematic keys are the parentheses (`[`, `{`, `<` …) other special chars
+e.g. the pipe `|`, the backtick `\`` and tilde `~` which I actually use pretty
+frequently. Many of those mentioned keys are only reachable with the pinky or
+ring finger. I don't know if this is just a matter of proper training. Let's see.
+
+Otherwise most of my keyboard mappings seem to somehow be persisted into my brain.
+
+I wouldn't say that I feel completely comfortable with the KAP but it feels like
+getting closer to a somewhat "better place".
