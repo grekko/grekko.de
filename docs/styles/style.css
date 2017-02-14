@@ -82,12 +82,19 @@ a {
 .main-navigation a:link,
 main a:link {
   text-decoration: none;
-  color: green;
   /* FIXME: RGBA safe? */
   padding-bottom: 0.2em;
   border-bottom-width: 0.1em;
   border-bottom-style: solid;
   border-bottom-color: currentColor;
+}
+
+.main-navigation a:link {
+  color: white;
+}
+
+main a:link {
+  color: green;
 }
 
 .main-navigation a {
@@ -98,7 +105,7 @@ main a:link {
 .main-navigation a:hover,
 main a:hover {
   padding-bottom: 0.05em;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 main a:visited {
