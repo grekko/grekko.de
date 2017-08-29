@@ -33,6 +33,11 @@ body {
   background: white;
 }
 
+.main-content img {
+  max-width: 100%;
+  margin: auto;
+}
+
 .main-navigation {
   width: 100%;
   background: black;
@@ -123,6 +128,19 @@ main a:visited {
   padding-left: 0.2em;
 }
 
+.split-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.split-box.reverse {
+  flex-direction: row-reverse;
+}
+
+.split-container {
+  flex: 1;
+}
+
 /* Code Blocks */
 
 /* FIXME: Full width code blocks? */
@@ -186,6 +204,18 @@ main a:visited {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.centered {
+  text-align: center;
+}
+
+.with-shadow {
+  box-shadow: 0px -7px 20px -5px rgba(0,0,0,0.5);
+}
+
+.rounded-corner {
+  border-radius: 7px 7px 7px 7px;
+}
+
 /* Accessibility */
 
 /* Taken from: http://aarontgrogg.com/lab/abbr/ */
@@ -210,6 +240,15 @@ main abbr[title]::after {
   }
 }
 
+@media all and (max-width: 40em) {
+  .split-box {
+    flex-direction: column;
+  }
+
+  .split-box.reverse {
+    flex-direction: column-reverse;
+  }
+}
 /** PRINT */
 
 @media print {
