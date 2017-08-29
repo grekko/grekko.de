@@ -14,7 +14,6 @@ var Metalsmith = require('metalsmith'),
   debug = require('metalsmith-debug');
 
 Metalsmith(__dirname)
-  .use(debug())
   .use(serve({
     port: 8080,
     verbose: true
@@ -41,7 +40,7 @@ Metalsmith(__dirname)
       reverse: true
     },
     pages: {
-      pattern: "pages/*.html"
+      pattern: "pages/**/*.html"
     }
   }))
   .use(layoutByPath())
@@ -53,7 +52,8 @@ Metalsmith(__dirname)
   }))
 	.use(inPlace())
 	.use(inlineSource())
-  .use(moveUp("pages/*"))
+  .use(moveUp("pages/**/*"))
+  .use(debug())
   .build(function (err) {
     if (err) {
       console.log(err);
