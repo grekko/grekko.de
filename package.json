@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "handlebars": "^4.0.6",
+    "handlebars": "^4.0.11",
     "inline-source": "^5.2.0",
     "jstransformer-handlebars": "^1.0.0",
     "metalsmith": "^2.3.0",
