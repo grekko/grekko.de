@@ -19,7 +19,7 @@
     "metalsmith-prism": "^3.0.2",
     "metalsmith-serve": "^0.0.7",
     "metalsmith-static": "^0.0.5",
-    "nodemon": "^1.11.0",
+    "nodemon": "^1.14.9",
     "svgo": "^0.7.1"
   },
   "devDependencies": {},
