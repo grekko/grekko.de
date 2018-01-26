@@ -451,6 +451,12 @@ debug@^2.2.0:
   dependencies:
     ms "0.7.2"
 
+debug@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  dependencies:
+    ms "2.0.0"
+
 debug@~0.7.4:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-0.7.4.tgz#06e1ea8082c2cb14e39806e22e2f6f757f92af39"
@@ -907,9 +913,9 @@ inline-source@^5.2.0:
     svgo "0.7.x"
     uglify-js "2.7.x"
 
-inputformat-to-jstransformer@^1.1.8:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/inputformat-to-jstransformer/-/inputformat-to-jstransformer-1.2.0.tgz#005e85e95526ddd0b327db30bbd5e3b9cba6cd3d"
+inputformat-to-jstransformer@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/inputformat-to-jstransformer/-/inputformat-to-jstransformer-1.2.1.tgz#4e0f3c0c9fd61b305801b26944b10256d4a760eb"
   dependencies:
     require-one "^1.0.2"
 
@@ -1010,7 +1016,7 @@ is-typedarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-typedarray/-/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
 
-is-utf8@^0.2.0, is-utf8@~0.2.0:
+is-utf8@^0.2.0, is-utf8@^0.2.1, is-utf8@~0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
 
@@ -1306,19 +1312,14 @@ metalsmith-discover-helpers@^0.1.0:
     fs-tools "^0.2.11"
     handlebars "*"
 
-metalsmith-engine-jstransformer@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/metalsmith-engine-jstransformer/-/metalsmith-engine-jstransformer-0.1.1.tgz#0303ec7cb2b9514aed42afda70dc80b47a8e613c"
+metalsmith-in-place@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/metalsmith-in-place/-/metalsmith-in-place-4.1.1.tgz#d36c6642818062202bdd26eae2c279c7efe7a5bc"
   dependencies:
-    extend "^3.0.0"
-    inputformat-to-jstransformer "^1.1.8"
+    debug "^3.1.0"
+    inputformat-to-jstransformer "^1.2.1"
+    is-utf8 "^0.2.1"
     jstransformer "^1.0.0"
-
-metalsmith-in-place@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/metalsmith-in-place/-/metalsmith-in-place-2.0.1.tgz#d2330781a2802f93b70bc5a04b09035c93f0a8d9"
-  dependencies:
-    metalsmith-engine-jstransformer "^0.1.1"
     multimatch "^2.1.0"
 
 metalsmith-layouts@^1.7.0:
@@ -1490,6 +1491,10 @@ ms@0.7.1:
 ms@0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
+
+ms@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
 multimatch@^2.0.0, multimatch@^2.1.0:
   version "2.1.0"
