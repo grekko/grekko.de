@@ -20,7 +20,7 @@
     "metalsmith-serve": "^0.0.7",
     "metalsmith-static": "^0.0.5",
     "nodemon": "^1.11.0",
-    "svgo": "^0.7.1"
+    "svgo": "^1.0.5"
   },
   "devDependencies": {},
   "scripts": {
