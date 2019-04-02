@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background: #490A3D;
+  background: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +26,7 @@ body {
 }
 
 .main {
+  background: #490A3D;
   width: 100%;
 }
 
@@ -40,7 +41,6 @@ body {
 
 .main-navigation {
   width: 100%;
-  background: black;
   padding: 1em 0;
   font-size: 1.2rem;
 }
@@ -49,10 +49,15 @@ body {
   margin-left: 0.5em;
 }
 
-.reset-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.footer {
+  font-size: 0.8rem;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
 }
 
 /* SVG Icons */
@@ -249,6 +254,16 @@ main abbr[title]::after {
     flex-direction: column-reverse;
   }
 }
+
+/* Utils */
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
 /** PRINT */
 
 @media print {
