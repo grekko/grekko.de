@@ -72,6 +72,13 @@ body {
 
 /* Typo */
 
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora Regular'), local('Lora-Regular'), url(/fonts/lora.woff2) format('woff2');
+}
+
 html {
   font-size: 130%;
   font-family: "Lora", sans-serif;
